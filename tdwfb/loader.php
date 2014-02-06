@@ -29,7 +29,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 require( dirname( __FILE__ ) . '/admin.php');
 
-function footer_script() {
+function tdwfb_footer_script() {
 	global $tdwfb_options;
 	
 	$tdwfb_options = get_option('tdwfb_plugin_options');
@@ -57,4 +57,4 @@ function footer_script() {
 	
 <?php	
 }
-add_action('wp_footer', 'footer_script');
+add_action('wp_footer', 'tdwfb_footer_script');
