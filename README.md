@@ -6,7 +6,7 @@ In celebration of the win against SOPA and PIPA two years ago, and in memory of 
 
 Together we will push back against powers that seek to observe, collect, and analyze our every digital action. Together, we will make it clear that such behavior is not compatible with democratic governance. Together, if we persist, we will win this fight.
 
-http://https://thedaywefightback.org
+https://thedaywefightback.org
 
 
 ///////////////////////
