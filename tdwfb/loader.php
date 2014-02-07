@@ -35,6 +35,7 @@ function tdwfb_footer_script() {
 	$tdwfb_options = get_option('tdwfb_plugin_options');
 	
 	$greeting = !empty( $tdwfb_options['greeting'] ) ? $tdwfb_options['greeting'] : 'Dear Internet Users';
+	$greeting = addslashes(html_entity_decode($greeting, ENT_QUOTES));
 	$date = !empty( $tdwfb_options['date'] ) ? true : false;
 	$call = !empty( $tdwfb_options['call'] ) ? true : false;
 
