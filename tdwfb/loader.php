@@ -3,8 +3,6 @@
 Plugin Name: The Day We Fight Back
 Plugin URI: http://thedaywefightback.org
 Description: Add a banner to your site in opposition to mass surveillance on 02/11 thedaywefightback.org
-Text Domain: apppresser
-Domain Path: /languages
 Version: 1.0
 Author: modemlooper
 Author URI: http://twitter.com/modemlooper
