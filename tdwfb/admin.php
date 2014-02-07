@@ -81,7 +81,7 @@ function tdwfb_section_general() {
  */
 function tdwfb_plugin_options_validate($input) {
 
-	$input['greeeting'] = strip_tags($input['greeeting']);
+	$input['greeting'] = htmlentities($input['greeting'], ENT_QUOTES);
 
 	return $input; // return validated input
 
