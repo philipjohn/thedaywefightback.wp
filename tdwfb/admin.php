@@ -115,7 +115,7 @@ function tdwfb_setting_date() {
 	$checked = '';
 
 	if( !empty( $tdwfb_options['date']) ) { $checked = ' checked="checked" '; }
-	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[date]' type='checkbox' />	 ";
+	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[date]' type='checkbox' />  ";
 	_e('Disable the date and display banner now.', 'tdwfb');
 	
 }
@@ -132,7 +132,7 @@ function tdwfb_setting_call() {
 	$checked = '';
 
 	if( !empty( $tdwfb_options['call']) ) { $checked = ' checked="checked" '; }
-	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[call]' type='checkbox' />	 ";
+	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[call]' type='checkbox' />  ";
 	_e('Only display a form for calling congress.', 'tdwfb');
 
 }
