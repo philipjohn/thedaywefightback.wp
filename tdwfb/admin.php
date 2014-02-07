@@ -133,6 +133,6 @@ function tdwfb_setting_call() {
 
 	if( !empty( $tdwfb_options['call']) ) { $checked = ' checked="checked" '; }
 	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[call]' type='checkbox' />  ";
-	_e('Only display a form for calling congress.', 'tdwfb');
+	_e('Only display a form for calling congress. Removes email form.', 'tdwfb');
 
 }
