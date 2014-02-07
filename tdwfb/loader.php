@@ -31,30 +31,30 @@ require( dirname( __FILE__ ) . '/admin.php');
 
 function footer_script() {
 	global $tdwfb_options;
-	
+
 	$tdwfb_options = get_option('tdwfb_plugin_options');
-	
+
 	$greeting = !empty( $tdwfb_options['greeting'] ) ? $tdwfb_options['greeting'] : 'Dear Internet Users';
 	$date = !empty( $tdwfb_options['date'] ) ? true : false;
 	$call = !empty( $tdwfb_options['call'] ) ? true : false;
 
 ?>
 	<!--[if !(lte IE 8)]><!-->
-	<script type="text/javascript"> 
+	<script type="text/javascript">
 	  // The defaults are set below
 	  var tdwfb_config = {
-	    greeting: '<?php echo $greeting;  ?>', // Sets the salutation at the top left
-	    disableDate: <?php echo json_encode($date); ?>, // If true, the banner shows even if the date is not yet 02/11/2014
-	    callOnly: <?php echo json_encode($call); ?> // If true, the banner only displays a form for calling congress
+		 greeting: '<?php echo $greeting;  ?>', // Sets the salutation at the top left
+		 disableDate: <?php echo json_encode($date); ?>, // If true, the banner shows even if the date is not yet 02/11/2014
+		 callOnly: <?php echo json_encode($call); ?> // If true, the banner only displays a form for calling congress
 	  };
 	  (function(){
-	    var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-	    e.src = document.location.protocol + '//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
+		 var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
+		 e.src = document.location.protocol + '//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js';
+		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
 	  })();
 	</script>
 	<!--<![endif]-->
-	
-<?php	
+
+<?php
 }
 add_action('wp_footer', 'footer_script');
