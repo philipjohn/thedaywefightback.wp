@@ -55,7 +55,7 @@ function tdwfb_plugin_options_page() {
 				<input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Changes'); ?>" />
 			</p>
 		</form>
-		<p>The plugin will show the banner at midnight on 2/11 and display only for 24 hours. You can disable this and show the banner now with disable date below.</p>
+		<p>The plugin will show the banner at midnight on 2/11 and display only for 24 hours. You can disable this and show the banner now with Disable Date option below.</p>
 	</div>
 <?php
 }
