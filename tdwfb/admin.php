@@ -55,7 +55,7 @@ function tdwfb_plugin_options_page() {
 				<input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Changes'); ?>" />
 			</p>
 		</form>
-
+		<p>The plugin will show the banner at midnight on 2/11 and display only for 24 hours. You can disable this and show the banner now with Disable Date option above.</p>
 	</div>
 <?php
 }
@@ -81,7 +81,7 @@ function tdwfb_section_general() {
  */
 function tdwfb_plugin_options_validate($input) {
 
-	$input['greeeting'] = strip_tags($input['greeeting']);
+	$input['greeting'] = htmlentities($input['greeting'], ENT_QUOTES);
 
 	return $input; // return validated input
 
@@ -115,8 +115,13 @@ function tdwfb_setting_date() {
 	$checked = '';
 
 	if( !empty( $tdwfb_options['date']) ) { $checked = ' checked="checked" '; }
+<<<<<<< HEAD
 	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[date]' type='checkbox' />	 ";
 	_e('Disable the date and display banner now.', 'tdwfb');
+=======
+	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[date]' type='checkbox' />  ";
+	_e('Display banner now before 2/11.', 'tdwfb');
+>>>>>>> be88c19da9730710b23380272881d81696006ce9
 
 }
 
@@ -132,7 +137,12 @@ function tdwfb_setting_call() {
 	$checked = '';
 
 	if( !empty( $tdwfb_options['call']) ) { $checked = ' checked="checked" '; }
+<<<<<<< HEAD
 	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[call]' type='checkbox' />	 ";
 	_e('Only display a form for calling congress.', 'tdwfb');
+=======
+	echo "<input ".$checked." id='responsive_css' name='tdwfb_plugin_options[call]' type='checkbox' />  ";
+	_e('Only display a form for calling congress. Removes email form.', 'tdwfb');
+>>>>>>> be88c19da9730710b23380272881d81696006ce9
 
 }
