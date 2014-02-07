@@ -24,3 +24,7 @@ Options:
 Demo:
 
 http://modemlooper.me
+
+
+issues: 
+If you activate plugin and banner isn't showing check the Disable date option. You may need to delete your cache if running a cache plugin. 
